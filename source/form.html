@@ -48,7 +48,7 @@
                </p>
             </div>
             <form action="form-name" action="https://echo.htmlacademy.ru/" method="post">
-               <div class="form-name__wrapper">
+               <div class="form-name form-name__wrapper">
                   <label class="form-surname">
                      <span class="submit-surname">Фамилия:</span>
                      <input type="text" name="surname" placeholder="Укажите фамилию *" required>
@@ -70,42 +70,42 @@
                    <li class="achievements-filter__item">
                       <label class="achievements-control">
                          <input class="visually-hidden control-input" type="checkbox" name="selfi" checked>
-                         <span class="achievements-form__mark achievements-form__mark--checked"></span>
+                         <span class="achievements-filter__mark achievements-filter__mark--checked"></span>
                          <span class="control-label">Сделал селфи с акулой</span>
                       </label>
                    </li>
                    <li class="achievements-filter__item">
                       <label class="achievements-control">
                          <input class="visually-hidden control-input" type="checkbox" name="tan" checked>
-                         <span class="achievements-form__mark achievements-form__mark--checked"></span>
+                         <span class="achievements-filter__mark achievements-filter__mark--checked"></span>
                          <span class="control-label">Обгорел на пляже</span>
                       </label>
                    </li>
                    <li class="achievements-filter__item">
                       <label class="achievements-control">
                          <input class="visually-hidden control-input" type="checkbox" name="chuknorris">
-                         <span class="achievements-form__mark achievements-form__mark--checked"></span>
+                         <span class="achievements-filter__mark achievements-filter__mark--checked"></span>
                          <span class="control-label">Видел Чака Норриса</span>
                       </label>
                    </li>
                    <li class="achievements-filter__item">
                       <label class="achievements-control">
                          <input class="visually-hidden control-input" type="checkbox" name="presents">
-                         <span class="achievements-form__mark achievements-form__mark--checked"></span>
+                         <span class="achievements-filter__mark achievements-filter__mark--checked"></span>
                          <span class="control-label">Накупил сувениров</span>
                       </label>
                     </li>
                     <li class="achievements-form__item">
                       <label class="achievements-control">
                          <input class="visually-hidden control-input" type="checkbox" name="tower" checked>
-                         <span class="achievements-form__mark achievements-form__mark--checked"></span>
+                         <span class="achievements-filter__mark achievements-filter__mark--checked"></span>
                          <span class="control-label">Удержал башню</span>
                       </label>
                     </li>
                     <li class="achievements-filter__item">
                        <label class="achievements-control">
                           <input class="visually-hidden control-input" type="checkbox" name="destroy">
-                          <span class="achievements-form__mark achievements-form__mark--checked"></span>
+                          <span class="achievements-filter__mark achievements-filter__mark--checked"></span>
                           <span class="control-label">Разгромил отель</span>
                         </label>
                      </li>
@@ -113,7 +113,7 @@
                </fieldset>
             </section>
             <section class="form-contacts">
-               <div class="form-name__wrapper">
+               <div class="form-contacts__wrapper">
                   <label class="form-phone">
                      <span class="submit-phone">НОМЕР ТЕЛЕФОНА</span>
                      <input type="number" name="phone-number" placeholder="Номер, пожалуйста">
@@ -124,6 +124,8 @@
                   </label>
                </div>
             </section>
+
+            <section class="form-os">
             <fieldset class="form-os__filter">
                <legend class="form-os__title">С каким приложением путешествовали?</legend>
                <ul class="form-os__list">
@@ -143,6 +145,7 @@
                   </li>
                </ul>
             </fieldset>
+          </section>
             <section class="form-reviews">
                <div class="form-reviews__wrapper">
                   <label class="form-for-review">
@@ -174,10 +177,9 @@
                </li>
             </ul>
          </div>
-         <div class="main-footer__copyright copyright">
+         <div class="form-footer__copyright copyright">
             <b class="copyright__text">Разработано:</b>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-         </div>
          </div>
       </footer>
       <div class="modal-error modal-error--active">
