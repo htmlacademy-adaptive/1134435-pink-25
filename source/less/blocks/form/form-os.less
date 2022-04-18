@@ -1,0 +1,47 @@
+.form-os {
+  background-color: #f2f2f2;
+}
+
+.control-os {
+  position: relative;
+  display: flex;
+}
+
+.form-os__title {
+  line-height: 30px;
+  font-weight: 400;
+}
+
+
+.form-os__radio-mark::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50%;
+  background-color: #ffffff;
+  width: 37px;
+  height: 37px;
+  border: 2px solid #e5e5e5;
+
+  :hover {
+    border-color: #283645;
+  }
+
+  :active {
+    border-color: #d22856;
+  }
+}
+
+.form-os__radio-mark::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+  background-color: #d22856;
+  width: 15px;
+  height: 15px;
+  display: none;
+}
