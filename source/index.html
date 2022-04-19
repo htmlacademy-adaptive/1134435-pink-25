@@ -16,28 +16,28 @@
           <svg width="50" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.14 0C.99 0 .84.02.7.07S.43.2.33.3A.88.88 0 0 0 0 1v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 3V1a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Zm0 10c-.15 0-.3.02-.44.07s-.27.12-.37.22A.88.88 0 0 0 0 11v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 13v-2a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Zm0 10c-.15 0-.3.02-.44.07s-.27.12-.37.22A.88.88 0 0 0 0 21v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 23v-2a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Z" fill="#fff"/></svg>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="catalog.html">Фотографии</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="form.html">Конкурс</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="https://htmlacademy.ru">html academy</a>
             </li>
           </ul>
         </div>
       </nav>
-      <h1 class="main-promo__title promo-title">Взгляните на жизнь иначе!</h1>
+      <h1 class="index-promo__title promo-title">Взгляните на жизнь иначе!</h1>
     </div>
     </header>
     <main class="main-container">
       <div class="download-link">
-        <button class="main-download__toggle" type="button">Скачать приложение</button>
+        <button class="download-link__toggle" type="button">Скачать приложение</button>
         <div class="download-link__wrapper">
           <ul class="download-link__list">
             <li class="download-link__item">
@@ -116,48 +116,51 @@
      </section>
 
      <section class="price">
-      <table class="price__taple">
+      <table class="price__table">
         <tr>
-          <td><span class="product-price product-price">База</span></td>
-          <td><span class="product-price product-price--new">Стандарт</span></td>
-          <td><span class="product-price product-price">Анлим</span></td>
+          <td><span class="price__rate-name">База</span>
+            <p class="price__rate-value">1,99 USD</p></td>
+          <td><span class="price__rate-name price__rate-name--new">Стандарт</span>
+            <p class="price__rate-value">3,99 USD</p></td>
+          <td><span class="price__rate-name">Анлим</span>
+            <p class="price__rate-value">9,99 USD</p></td>
         </tr>
         <tr>
-          <td>розовый фильтр</td>
-          <td><span class="visually-hidden">галочка</span></td>
-          <td><span class="visually-hidden">галочка</span></td>
-          <td><span class="visually-hidden">галочка</span></td>
-        </tr>
-        <tr>
-          <td>смайлики</td>
+          <td class="price__rate-option">розовый фильтр</td>
           <td><span class="visually-hidden">галочка</span></td>
           <td><span class="visually-hidden">галочка</span></td>
           <td><span class="visually-hidden">галочка</span></td>
         </tr>
         <tr>
-          <td>комментарии</td>
+          <td class="price__rate-option">смайлики</td>
+          <td><span class="visually-hidden">галочка</span></td>
+          <td><span class="visually-hidden">галочка</span></td>
+          <td><span class="visually-hidden">галочка</span></td>
+        </tr>
+        <tr>
+          <td class="price__rate-option">комментарии</td>
           <td><span class="visually-hidden">галочка</span></td>
           <td><span class="visually-hidden">галочка</span></td>
           <td><span class="visually-hidden">галочка</span></td>
         </tr>
       </table>
      </section>
-    <section class="main-contacts">
-      <h2 class="main-contacts__title">Остались вопросы?
+    <section class="main-contacts contacts">
+      <h2 class="contacts__title">Остались вопросы?
         <br>Свяжитесь с нами!</h2>
-        <div class="main-contacts__wrapper contacts">
-          <ul class="contacts-list">
+        <div class="contacts__wrapper">
+          <ul class="contacts__list">
             <li class="contacts__item">
-              <h3 class="contacts__phone phone-title">Звоните:</h3>
-              <a class="main-contacts-phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+              <h3 class="contacts__phone-title">Звоните:</h3>
+              <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </li>
             <li class="contacts__item">
-              <h3 class="contacts__phone mail-title">Пишите:</h3>
-              <a class="main-contacts-mail" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <h3 class="contacts__mail-title">Пишите:</h3>
+              <a class="main-contacts__mail" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
             <li class="contacts__item">
-              <h3 class="contacts__phone adres-title">Приезжайте в гости:</h3>
-              <a class="main-contacts-adres" href="">ул. Большая Конюшенная, 19/8</a>
+              <h3 class="contacts__adres-title">Приезжайте в гости:</h3>
+              <a class="main-contacts__adres" href="">ул. Большая Конюшенная, 19/8</a>
             </li>
           </ul>
         </div>

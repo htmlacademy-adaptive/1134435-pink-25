@@ -1,0 +1,32 @@
+
+.achievements-control {
+  position: relative;
+  display: flex;
+}
+
+.achievements-control .achievements-filter__mark::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 1px;
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  border-radius: 1px;
+  border: 2px solid #e5e5e5;
+
+  :hover {
+    border-color: #283645;
+  }
+
+  :active {
+    border-color: #d22856;
+  }
+}
+
+.control-input[type="checkbox"]:checked + .achievements-filter__mark::before {
+  background-image: url("//source/img/yes.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
