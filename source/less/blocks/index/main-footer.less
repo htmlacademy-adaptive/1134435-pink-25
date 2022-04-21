@@ -1,5 +1,13 @@
 .main-footer__social {
   display: flex;
   justify-content: space-between;
-}
+  min-height: 284px;
 
+  @media (min-width: @table-widht) {
+    height: 127px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 197px;
+  }
+}
