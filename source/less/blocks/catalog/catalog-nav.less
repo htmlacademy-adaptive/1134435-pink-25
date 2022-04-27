@@ -2,6 +2,12 @@
   line-height: 32px;
   font-weight: 700;
   color: #ffffff;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 13px;
+  }
 }
 
 .catalog-nav__toggle {
@@ -15,4 +21,9 @@
   :active {
     color: fade(#d22856;30%);
   }
+}
+
+.catalog-nav__list {
+  list-style: none;
+  padding: 0;
 }

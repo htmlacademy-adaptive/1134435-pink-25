@@ -1,5 +1,22 @@
+.form-reviews {
+  order: 5;
+}
+
+.form-reviews__border {
+  border-color: transparent;
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid #e5e5e5;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: 2px solid #e5e5e5;
+  }
+}
+
 .form-reviews__wrapper {
   display: flex;
+  flex-direction: column;
 }
 
 .form-reviews__title {
@@ -45,4 +62,17 @@
 
 .form-reviews__reminder::first-letter {
   color: #d22856;
+}
+
+.form-reviews__footer {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
+  }
 }

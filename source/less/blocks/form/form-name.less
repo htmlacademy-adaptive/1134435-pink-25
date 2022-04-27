@@ -1,3 +1,16 @@
+.form-name__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-wrap: wrap;
+  }
+}
+
 .form-name__submit-surname {
   font-size: 14px;
   line-height: 30px;
@@ -19,7 +32,7 @@
   color: #d22856;
 }
 
-.form-name input {
+.form-name__surname-field {
   width: 276px;
   height: 59px;
   border: 2px solid #e5e5e5;
@@ -33,4 +46,61 @@
   :active {
     border-color: #d22856;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 521px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 336px;
+  }
 }
+
+.form-name__name-field {
+  width: 276px;
+  height: 59px;
+  border: 2px solid #e5e5e5;
+  margin-top: 17px;
+  box-sizing: border-box;
+
+  :hover {
+    border-color: #283645;
+  }
+
+  :active {
+    border-color: #d22856;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 561px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 376px;
+  }
+}
+
+.form-name__patronymic-field {
+  width: 276px;
+  height: 59px;
+  border: 2px solid #e5e5e5;
+  margin-top: 17px;
+  box-sizing: border-box;
+
+  :hover {
+    border-color: #283645;
+  }
+
+  :active {
+    border-color: #d22856;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 521px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 336px;
+  }
+}
+
