@@ -23,15 +23,6 @@
   margin-top: 45px;
 }
 
-.contacts__phone {
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 32px;
-  color: #d22856;
-  text-decoration: none;
-  text-align: center;
-}
-
 .contacts__mail-title {
   font-weight: 700;
   line-height: 24px;
@@ -39,14 +30,16 @@
   margin-top: 45px;
 }
 
-.contacts__mail {
+.contacts__item a {
   font-size: 24px;
   font-weight: 300;
   line-height: 32px;
   color: #d22856;
   text-decoration: none;
   text-align: center;
+}
 
+.contacts__mail a {
   :hover {
     color: #283645;
     text-decoration: underline;
@@ -64,11 +57,34 @@
   margin-top: 45px;
 }
 
-.contacts__adres {
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 32px;
-  color: #d22856;
-  text-decoration: none;
-  text-align: center;
+.contacts__list {
+  list-style: none;
+  padding: 0;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 177px;
+    padding-right: 160px;
+    text-align: center;
+  }
 }
+
+.main-contacts__map {
+  width: 100%;
+}
+
+/*
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 177px;
+    padding-right: 160px;
+  }
+}
+*/
