@@ -21,10 +21,8 @@
   }
 }
 
-.catalog__list:nth-child(1) {
-  grid-column-start: 1;
-  grid-column-end: -1;
 
+.catalog__item--today {
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
     grid-column-end: -1;
@@ -32,15 +30,21 @@
 
   @media (min-width: @desktop-width) {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 4;
   }
 }
+
+.catalog__item--today img {
+  width: 100vh;
+}
+
 
 .catalog__caption {
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
   margin: 30px 20px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
