@@ -79,16 +79,16 @@
   }
 }
 
-.form-os__radio-mark::after {
+.control-input[type="radio"]:checked + .form-os__radio-mark::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 13px;
+  left: 13px;
   border-radius: 50%;
   background-color: #d22856;
   width: 15px;
   height: 15px;
-  display: none;
+  background-position: center;
 }
 
 .form-os__item {

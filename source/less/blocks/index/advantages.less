@@ -4,13 +4,36 @@
 
 .advantages__wrapper {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     justify-content: space-between;
+    flex-direction: row-reverse;
   }
 
   @media (min-width: @desktop-width) {
     flex-wrap: wrap;
+  }
+}
+
+.advantages__wrapper::before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  clip-path: polygon(0 100%, 0 0, 100% 0);
+
+  @media (min-width: @tablet-width) {
+    height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 70px;
   }
 }
 
@@ -27,9 +50,18 @@
   @media (min-width: @desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 184px;
-    margin-right: 184px;
+    /* margin-left: 184px; */
+    /* margin-right: 184px; */
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-around;
   }
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .advantages__title-caption {
@@ -94,12 +126,14 @@
 
   @media (min-width: @desktop-width) {
     display: block;
+    position: relative;
   }
 }
 
 .advantages__background {
-  order: -1;
   object-fit: contain;
+  position: relative;
+  z-index: 1;
 
   @media (min-width: @desktop-width) {
     display: none;
@@ -166,7 +200,6 @@
   display: flex;
 
   @media (min-width: @tablet-width) {
-    width: 238px;
     margin-left: 20px;
     margin-top: 54px;
     margin-bottom: 109px;
@@ -174,6 +207,7 @@
 
   @media (min-width: @desktop-width) {
     width: 298px;
+    height: 345px;
     margin-left: 131px;
     margin-bottom: 67px;
   }

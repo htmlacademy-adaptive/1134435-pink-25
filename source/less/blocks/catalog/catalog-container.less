@@ -1,18 +1,24 @@
 .catalog-container {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 
+  /*
   @media (min-width: @tablet-width) {
     margin-left: 22px;
     margin-right: 22px;
   }
+  */
 
   @media (min-width: @desktop-width) {
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    /*
     margin-left: 130px;
     margin-right: 130px;
+    */
     justify-content: space-between;
+    align-content: center;
   }
 }
 

@@ -22,18 +22,26 @@
 
 .form-header {
   color: #ffffff;
-  height: 237px;
-  background-repeat: no-repeat;
+  min-height: 66px;
+  background-color: #283645;
   background-size: cover;
-  background-image: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-image: url("/img/banner-desktop.png");
+  background-position: 50% 0;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/banner-desktop@2x.png");
+  }
 
   @media (min-width: @tablet-width) {
-    min-height: 110px;
+    background-position: 100%;
+    height: 440px;
+    object-fit: fill;
   }
 
   @media (min-width: @desktop-width) {
-    height: 392px;
+    height: 394px;
+    object-fit: fill;
   }
 }
 
