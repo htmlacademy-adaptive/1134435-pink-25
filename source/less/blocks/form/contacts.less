@@ -9,6 +9,7 @@
 
 .form-contacts__title {
   display: none;
+  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
@@ -16,6 +17,9 @@
     line-height: 30px;
     color: #d22856;
     display: inline-block;
+    text-align: center;
+    padding: 0 31px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: @desktop-width) {
@@ -27,12 +31,87 @@
   }
 }
 
+.form-phone {
+  position: relative;
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column-reverse;
+  }
+}
+
+
+.form-phone::before {
+  display: none;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 55px;
+  height: 55px;
+  background-color: #e5e5e5;
+  background-image: url("../img/phone-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 1px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    top: 19px;
+    left: 440px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    top: 19px;
+    left: 315px;
+  }
+}
+
+.form-mail {
+  position: relative;
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column-reverse;
+  }
+}
+
+.form-mail::before {
+  display: none;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 55px;
+  height: 55px;
+  background-color: #e5e5e5;
+  background-image: url("../img/mail-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 1px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    top: 19px;
+    left: 440px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    top: 19px;
+    left: 315px;
+  }
+}
+
+
 .form-contacts input {
   width: 276px;
   height: 59px;
   border: 2px solid #e5e5e5;
   margin-top: 17px;
   box-sizing: border-box;
+  padding-left: 20px;
 
   :hover {
     border-color: #283645;
@@ -41,6 +120,17 @@
   :active {
     border-color: #d22856;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 496px;
+    height: 59px;
+    align-self: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 371px;
+    height: 59px;
+  }
 }
 
 .form-contacts__border {
@@ -48,9 +138,16 @@
 
   @media (min-width: @tablet-width) {
     border: 2px solid #e5e5e5;
+    padding: 0 60px;
   }
 
   @media (min-width: @desktop-width) {
     border: 2px solid #e5e5e5;
+    width: 936px;
+    height: 158px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
   }
 }

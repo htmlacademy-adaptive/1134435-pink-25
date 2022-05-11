@@ -1,4 +1,33 @@
 .form-container {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 22px;
+    margin-right: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 132px;
+    margin-right: 132px;
+    justify-content: space-between;
+  }
+}
+
+.form-container__description {
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  margin: 54px 20px 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }

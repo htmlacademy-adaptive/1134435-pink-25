@@ -1,4 +1,4 @@
-.achievements__filter {
+.achievements {
   display: flex;
   background-color: #f2f2f2;
   border-color: transparent;
@@ -6,14 +6,30 @@
 
   @media (min-width: @tablet-width) {
     background-color: #ffffff;
-    border: 2px solid #e5e5e5;
+    justify-content: center;
     order: 4;
   }
 
   @media (min-width: @desktop-width) {
     background-color: #ffffff;
-    border: 2px solid #e5e5e5;
+    padding-top: 0;
     order: 4;
+  }
+}
+
+.achievements__filter {
+  display: flex;
+  border-color: transparent;
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid #e5e5e5;
+    flex-grow: 1;
+    text-align: center;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: 2px solid #e5e5e5;
   }
 }
 
@@ -22,16 +38,9 @@
   font-weight: 400;
   line-height: 18px;
   color: #d22856;
-  margin-top: 42px;
-  margin-bottom: 44px;
-
-  @media (min-width: @tablet-width) {
-    line-height: 30px;
-  }
-
-  @media (min-width: @desktop-width) {
-    min-height: 110px;
-  }
+  text-transform: uppercase;
+  padding: 42px 31px 40px;
+  text-align: center;
 }
 
 
@@ -46,6 +55,7 @@
   @media (min-width: @desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    width: 936px;
     height: 228px;
   }
 }
@@ -53,21 +63,40 @@
 .achievements__list {
   list-style: none;
   padding: 0;
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    row-gap: 50px;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
 }
 
 .achievements__list-control {
   position: relative;
   display: flex;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 50px;
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-wrap: wrap;
+    margin: 0;
+  }
 }
 
 .achievements__list-control .achievements__list-mark::before {
   position: absolute;
   content: "";
   top: 0;
-  left: 1px;
+  left: 10px;
   display: block;
-  width: 35px;
-  height: 35px;
+  width: 31px;
+  height: 31px;
   background-color: #ffffff;
   border-radius: 1px;
   border: 2px solid #e5e5e5;
@@ -82,7 +111,15 @@
 }
 
 .control-input[type="checkbox"]:checked + .achievements__list-mark::before {
-  background-image: url("//source/img/yes.svg");
+  background-image: url("../img/tick.svg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.achievements__list-desc {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-left: 65px;
+  margin-bottom: 20px;
 }

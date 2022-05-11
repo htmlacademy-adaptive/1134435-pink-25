@@ -11,25 +11,29 @@
   }
 }
 
-.form-name__submit-surname {
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 400;
-  color: #d22856;
+.form-name__wrapper label {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-wrap: wrap;
+  }
 }
 
-.form-name__submit-name {
+.form-name__wrapper span {
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   color: #d22856;
-}
+  margin: 0 20px 17px;
+  text-transform: uppercase;
 
-.form-name__submit-patronymic {
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 400;
-  color: #d22856;
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-right: 20px;
+  }
 }
 
 .form-name__surname-field {
@@ -37,6 +41,8 @@
   height: 59px;
   border: 2px solid #e5e5e5;
   margin-top: 17px;
+  margin-bottom: 29px;
+  padding-left: 20px;
   box-sizing: border-box;
 
   :hover {
@@ -61,6 +67,8 @@
   height: 59px;
   border: 2px solid #e5e5e5;
   margin-top: 17px;
+  margin-bottom: 29px;
+  padding-left: 20px;
   box-sizing: border-box;
 
   :hover {
@@ -85,6 +93,8 @@
   height: 59px;
   border: 2px solid #e5e5e5;
   margin-top: 17px;
+  margin-bottom: 29px;
+  padding-left: 20px;
   box-sizing: border-box;
 
   :hover {
@@ -104,3 +114,8 @@
   }
 }
 
+input::placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
