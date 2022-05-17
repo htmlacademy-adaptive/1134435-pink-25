@@ -1,12 +1,39 @@
 .main-header__logo {
-  width: 23px;
+  width: 100px;
+  fill: #ffffff;
 
   :hover {
-    color: #d22856;
+    fill: #d22856;
   }
 
   :active {
-    color: fade(#ffffff; 30%);
+    fill: fade(#ffffff; 30%);
+  }
+}
+
+.main-header__pink-logo--visible-phone {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__pink-logo--visible-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-header__pink-logo--visible-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }
 
@@ -119,10 +146,10 @@
 .main-header__nav--closed .main-header__nav-toggle::before {
   content: "";
   position: absolute;
-  top: 15px;
-  left: 17px;
-  width: 23px;
-  height: 2px;
+  top: 25px;
+  left: -44px;
+  width: 50px;
+  height: 3px;
   background-color: #ffffff;
   box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
 }
