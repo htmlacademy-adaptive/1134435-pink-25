@@ -1,0 +1,67 @@
+.fieldset-apps {
+  background-color: @light-gray;
+  padding-top: 38px;
+  padding-bottom: 44px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 31px;
+    order: 0;
+    background-color: @white;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-basis: 470px;
+    padding-left: 37px;
+    padding-bottom: 34px;
+    box-sizing: border-box;
+  }
+}
+
+.fieldset-apps .form__item:not(:last-child) {
+  margin-bottom: 46px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 45px;
+  }
+}
+
+.fieldset-apps .form__fieldset {
+  @media (min-width: @tablet-width) {
+    padding-bottom: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 71px;
+    padding-right: 70px;
+    padding-bottom: 58px;
+    padding-top: 59px;
+    box-sizing: border-box;
+  }
+}
+
+.fieldset-apps .form__legend {
+  @media (max-width: @mobile-width-only) {
+    max-width: 180px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    display: inline-block;
+    top: -9px;
+    left: 31px;
+    background-color: @white;
+  }
+}
+
+.fieldset-apps .control {
+  padding-left: 70px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 61px;
+  }
+}
